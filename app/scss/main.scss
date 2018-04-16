@@ -6,7 +6,7 @@
 	color: #666;
 }
 
-::selection {
+::selection { 
 	background-color: $accent;
 	color: #fff;
 }
@@ -43,10 +43,11 @@ body {
 	text-align: center;
 }
 
-b, strong {
-	font-weight: bold;
+b, strong {  
+	font-weight: bold; 
 }
 
+ 
 
 
 @import "media"; // Always at the end
