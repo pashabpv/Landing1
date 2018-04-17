@@ -1,6 +1,6 @@
-@import "vars"
-@import "fonts"
-@import "libs"
+@import "_vars"
+@import "_fonts"
+@import "_libs"
 
 ::placeholder
 	color: #666
@@ -37,9 +37,39 @@ body
 b, strong
 	font-weight: bold
 
+a
+	text-decoration: none
+	&:hover, &:active
+		text-decoration: none
 
 .header 
-	background-color: #0f0f0f
+	background: url(../img/slider.jpg) no-repeat center
+	background-size: cover
+	height: 1024px	
+	.header_wrap
+		padding: 36px 0 0
+
+	.mmenu_list
+		list-style-type: none
+		padding: 0
+		margin: 0
+		
+		.mmenu_item
+			display: inline-block
+			margin: 0 35px 0 0
+			&:last-child()
+				margin: 0
+			& > a
+				color: #ffffff
+				font-size: 14px
+				&:hover
+					color: $accent2
+
+	.icon_wrap 
+		& > div
+			display: inline-block
+
+
 
 
 
