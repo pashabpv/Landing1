@@ -106,14 +106,31 @@ a
 			font-weight: bold
 			border-bottom: 3px solid #736357
 			transition: all 0.1s
-			text-shadow: 0 -2px #676767
+			text-shadow: 0 2px #676767
 
 			&:active
 				cursor: pointer
 				transform: translate(0px , 3px)
 				border-bottom: 1px solid #736357
+				text-shadow: 0 0 #676767
 			&:hover
 				color: #fff
+
+.owl-carousel
+
+	.owl-nav
+		font-size: 40px
+		& > button
+			outline: 0
+			position: absolute
+
+	.owl-prev
+		left: 5%
+		top: 50%
+
+	.owl-next
+		right: 5%
+		top: 50%
 				
 
 			
