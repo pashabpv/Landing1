@@ -48,7 +48,8 @@ a
 .header 
 	background: url(../img/slider.jpg) no-repeat center
 	background-size: cover
-	height: 1024px	
+	min-height: 1024px
+	height: 100%
 	position: relative
 	.header_wrap
 		padding: 36px 0 0
@@ -172,35 +173,72 @@ a
 		position: relative
 		text-align: center 
 		padding-bottom: 50px
+		transition: all 0.2s ease-in-out
+		
 
 		&::after
 			content: ''
-			position: absolute
+			display: block
 			width: 70px
 			height: 4px
 			background-color: #F1EDE9
-			left: 0
-			right: 0
-			bottom: 0
+			margin: 30px auto 0
+			transition: all 0.2s ease-in-out
 
+		&:hover
+			.item_text 
+				color: #C7B199	
 
+			img
+				filter: contrast(1%)	
 
+			&::after
+				background-color: #C7B199
+
+			
 		& img
 			display: inline-block
 			margin-bottom: 30px
+			transition: all 0.2s ease-in-out
 
 		.item_text 
 			font-size: 22px
 			color: #555555
 			font-weight: bold
 			margin-bottom: 20px
+			transition: all 0.2s ease-in-out
+
 
 		.text_desct
 			color: #8C8C8C
 			font-size: 14px
 			
+.section_2
+	background-color: #FBFAF8
+	padding: 77px 0 485px 0
+	background: url(/img/bg_1.jpg) no-repeat
+	background-size: cover
+	background-position: center
+	min-height: 700px
+
+	.section_title
+		text-align: center
+		color: #555555
+		margin-bottom: 25px
+
+		
+		.text-title
+			display: inline-block
+			font-size: 30px
+			font-weight: bold
+			margin-bottom: 10px
+
+		.text-desc	
+			font-size: 16px
+			margin: 0 auto
 
 			
+
 
 
 
