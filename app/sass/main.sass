@@ -263,14 +263,89 @@ a
 	padding: 77px 0 0
 
 	.tab-container
+		.etabs
+			text-align: center
+			margin: 0 0 23px 0;
+			.tab
+				display: inline-block
+				padding: 5px 25px 
+				margin: 0 3px
+				border: 1px solid #ebebeb
+				border-radius: 3px
+
+				&  > a
+					font-size: 14px
+
+				&:hover
+					background-color: #998675
+					& > a
+						color: #fff
+
+					
+
+				& > a 
+					color: $color_text2
 		
 		.tab_item
+			position: relative
+			margin: 15px 0
 
-			.tab_img
-				display: block
-				width: 100%
+			.img_overlay
+				position: relative
+
+				.tab_img
+					display: block
+					width: 100%
+
 			.tab_buttons
-				display: none
+				position: absolute
+				top: 35%
+				left: 50%
+				transform: translate(-50%, -50%)
+
+				& > a
+					display: inline-block
+					width: 25px
+					height: 25px
+				
+				.t_link
+					background: url(../img/link.png) no-repeat
+					margin-right: 25px
+					&:hover
+						background: url(../img/link_hover.png) no-repeat
+				.t_search
+					background: url(../img/lupa.png) no-repeat
+					&:hover
+						background: url(../img/lupa_hover.png) no-repeat
+				
+			&:hover
+				.img_overlay
+					&::after
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						right: 0
+						bottom: 0
+						background-color: rgba(17, 17, 17, 0.55)
+						transition: background .20s ease
+
+				.tab_desc
+					background-color: #362f2d
+					transition: background .25s ease
+				.tab_title
+					color: #fff
+				
+				.tab_text
+					color: $accent2
+					&::before
+						content: ""
+						position: absolute
+						top: -25px
+						left: 20px
+						border: 15px solid transparent
+						border-bottom: 10px solid #362f2d
+						z-index: 1
 
 		.tab_desc	
 			position: relative
@@ -278,24 +353,6 @@ a
 			background-color: #fbfaf8
 			color: $accent2
 			font-size: 20px
-			
-			&:hover
-				background-color: #362f2d
-				transition: background .25s ease
-				.tab_title
-					color: #fff
-				
-				.tab_text
-					color: $accent2
-				&::before
-					content: ""
-					position: absolute
-					top: -25px
-					left: 20px
-					border: 15px solid transparent
-					border-bottom: 10px solid #362f2d
-					z-index: 1
-
 
 			.tab_text
 				color: #d1d1d1

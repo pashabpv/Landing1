@@ -11,4 +11,6 @@ $(function() {
 })
 
 
+$('#tab-container').easytabs();
+
 });//End
